@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Pascal's Triangle"""
 
+
 def pascal_triangle(n):
     """
     Generate Pascal's triangle up to the given number of rows.
@@ -16,7 +17,7 @@ def pascal_triangle(n):
 
     if n <= 0:
         return matrix
-    
+
     for i in range(n):
         row = []
         for j in range(i + 1):
@@ -36,6 +37,5 @@ if __name__ == "__main__":
         """
         for row in triangle:
             print("[{}]".format(",".join([str(x) for x in row])))
-
 
     print_triangle(pascal_triangle(5))
