@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 """ Lockboxes """
+
+
 def canUnlockAll(boxes):
     """
     Determines if all the boxes can be opened or not.
 
     Args:
-        boxes (list of lists): A list of boxes, where each box is represented as a list of integers.
+        boxes (list of lists): A list of boxes,
+        where each box is represented as a list of integers.
 
     Returns:
         bool: True if all boxes can be opened, False otherwise.
@@ -26,12 +29,8 @@ def canUnlockAll(boxes):
 if __name__ == "__main__":
     boxes = [[1], [2], [3], [4], []]
     print(canUnlockAll(boxes))
-    boxes = [[1, 4, 6], [2], [0, 4, 1], 
-    [5, 6, 2], [3], [4, 1], [6]]
+    boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
     print(canUnlockAll(boxes))
 
-    boxes = [[1, 4], [2], [0, 4, 1], 
-    [3], [], [4, 1], [5, 6]]
+    boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
     print(canUnlockAll(boxes))
-
-
