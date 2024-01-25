@@ -51,5 +51,3 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         handle_interrupt(None, None)
     print_stats()
-
-    
