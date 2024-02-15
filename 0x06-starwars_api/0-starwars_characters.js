@@ -9,17 +9,19 @@ if (process.argv.length > 2) {
     }
     const characters = JSON.parse(body).characters;
     const characterName = characters.map(
-      Url => new Promise((resolve, reject) => {
-        request(Url, (promiseErr, __, charactersReqBody) => {
-          if (promiseErr) {
-            reject(promiseErr);
-          }
-          resolve(JSON.parse(charactersReqBody).name);
-        });
-      }));
+      (Url) =>
+        new Promise((resolve, reject) => {
+          request(Url, (promiseErr, __, charactersReqBody) => {
+            if (promiseErr) {
+              reject(promiseErr);
+            }
+            resolve(JSON.parse(charactersReqBody).name);
+          });
+        })
+    );
 
     Promise.all(characterName)
-      .then(names => console.log(names.join('\n')))
-      .catch(allErr => console.log(allErr));
+      .then((names) => console.log(names.join('\n')))
+      .catch((allErr) => console.log(allErr));
   });
 }
