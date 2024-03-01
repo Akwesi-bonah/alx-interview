@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-from typing import List
 """ modul make chage"""
+
+from typing import List
+
 
 def makeChange(coins: List[int], total: int) -> int:
     """Determines the fewest number of coins needed to meet a given
@@ -15,9 +17,7 @@ def makeChange(coins: List[int], total: int) -> int:
     return coins_count if total == 0 else -1
 
 
-
 if __name__ == '__main__':
     print(makeChange([1, 2, 25], 37))
 
     print(makeChange([1256, 54, 48, 16, 102], 1453))
-
