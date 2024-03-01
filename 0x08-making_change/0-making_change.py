@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """ modul make chage"""
 
-from typing import List
 
 
-def makeChange(coins: List[int], total: int) -> int:
+def makeChange(coins, total) -> int:
     """Determines the fewest number of coins needed to meet a given
     amount total when given a pile of coins of different values.
     """
