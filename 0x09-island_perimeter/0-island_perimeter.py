@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ module to calculate the perimeter of an island """
 
+
 def island_perimeter(grid):
     """ function to calculate the perimeter of an island """
     if not grid or not grid[0]:
