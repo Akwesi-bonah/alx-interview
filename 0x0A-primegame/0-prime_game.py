@@ -8,10 +8,12 @@ def isWinner(x, nums):
 
     Args:
         x (int): The number of rounds to be played.
-        nums (List[int]): A list of integers representing the number of elements in each round.
+        nums (List[int]): A list of integers representing 
+        the number of elements in each round.
 
     Returns:
-        str: The name of the winner ('Maria' or 'Ben') or None if there is no winner.
+        str: The name of the winner ('Maria' or 'Ben') 
+        or None if there is no winner.
 
     """
     if x < 1 or not nums:
